@@ -53,10 +53,10 @@ public class WelcomeFrame extends JFrame {
         buttonPanel.setBackground(new Color(240, 230, 210));
         buttonPanel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JButton blackFirstButton = createStyledButton("我先手（黑棋）");
+        JButton blackFirstButton = createStyledButton("我方先手（AI执白）");
         blackFirstButton.addActionListener(e -> startGame(true));
 
-        JButton whiteFirstButton = createStyledButton("AI先手（我执白）");
+        JButton whiteFirstButton = createStyledButton("敌人先手（AI执黑）");
         whiteFirstButton.addActionListener(e -> startGame(false));
 
         buttonPanel.add(blackFirstButton);
